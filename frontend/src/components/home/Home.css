@@ -1,0 +1,100 @@
+/* Home.css */
+/* Netflix-like background (using one of your image assets) */
+.home-container {
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Add dark overlay */
+.home-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 0;
+}
+
+/* Ensure contents appear above the overlay */
+.home-header,
+.home-main,
+.Toastify__toast-container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Header styles */
+.home-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--secondary-bg);
+  border-bottom: 1px solid #333;
+  height: var(--header-height);
+}
+
+/* Avatar styles */
+.user-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.user-avatar.expanded {
+  border-radius: 30px;
+  padding: 0 1rem;
+  width: auto;
+}
+
+.avatar-initial {
+  font-size: 1.5rem;
+}
+
+.full-name {
+  font-size: 1rem;
+  white-space: nowrap;
+}
+
+/* Logout button */
+.logout-button {
+  background-color: var(--accent-color);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #f6121d;
+}
+
+/* Main content area */
+.home-main {
+  flex: 1;
+  padding: 2rem;
+  width: 100%;
+}
+
+/* Mood display */
+.mood-display {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/* Loading indicator */
+.music-loading {
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 1rem;
+}

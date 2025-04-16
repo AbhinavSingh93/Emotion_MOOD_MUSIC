@@ -1,0 +1,18 @@
+/* src/styles/global.css */
+/* Reset some defaults */
+
+
+html, body {
+  font-family: var(--font-family);
+  background-color: var(--primary-bg);
+  color: var(--text-color);
+  height: 100%;
+  background: url('C:\Users\singh\AI_mood_music\frontend\images\pluto-mossa-3Adb8WApguo-unsplash.jpg') no-repeat center center / cover;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+

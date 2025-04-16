@@ -1,0 +1,10 @@
+
+:root {
+  --primary-bg: #141414;
+  --secondary-bg: #181818;
+  --accent-color: #e50914;
+  --text-color: #fff;
+  --text-color-secondary: #b3b3b3;
+  --header-height: 60px;
+  --font-family: 'Roboto', sans-serif;
+}

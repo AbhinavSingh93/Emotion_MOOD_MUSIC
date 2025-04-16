@@ -1,0 +1,68 @@
+/* PlayCards.css */
+.playcards-container {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.playcards-title {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+.playcards-grid {
+  display: flex;
+  overflow-x: auto;  /* Enable horizontal scrolling for a Netflix-like row */
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+
+.playcard {
+  min-width: 200px;
+  background-color: var(--secondary-bg);
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+}
+
+.playcard:hover {
+  transform: scale(1.05);
+}
+
+.playcard-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.playcard-info {
+  padding: 0.5rem;
+}
+
+.playcard-title {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+}
+
+.playcard-artist {
+  font-size: 0.9rem;
+  color: var(--text-color-secondary);
+  margin-bottom: 0.5rem;
+}
+
+.playcard-link {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: var(--accent-color);
+  color: #fff;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.playcard-link:hover {
+  background-color: #f6121d;
+}

@@ -1,0 +1,140 @@
+/* UploadImage.css */
+.upload-container {
+  background-color: var(--secondary-bg);
+  padding: 2rem;
+  margin: 2rem auto;
+  border-radius: 8px;
+  max-width: 500px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  color: var(--text-color);
+}
+
+.upload-title {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.upload-form {
+  position: relative;
+}
+
+.upload-input {
+  display: none;
+}
+
+/* Drag-and-drop box */
+.upload-dropzone {
+  border: 2px dashed #555;
+  padding: 2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.upload-dropzone:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.dropzone-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.upload-icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 0.5rem;
+  color: var(--accent-color);
+}
+
+.dropzone-text,
+.dropzone-subtext {
+  font-size: 1rem;
+  margin: 0.25rem 0;
+}
+
+/* Image preview */
+.image-preview-container {
+  position: relative;
+  margin-top: 1rem;
+}
+
+.image-preview {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+/* Clear preview button */
+.clear-preview-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: var(--accent-color);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem; /* Optional: Adjust as needed */
+  line-height: 1;
+  padding: 0;
+}
+
+
+/* Camera capture UI */
+.camera-container {
+  margin: 1rem 0;
+}
+
+.camera-video {
+  width: 100%;
+  max-height: 300px;
+  border-radius: 8px;
+}
+
+/* Upload buttons */
+.upload-buttons {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.primary-button,
+.secondary-button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.primary-button {
+  background-color: var(--accent-color);
+  color: #fff;
+}
+
+.primary-button:hover {
+  background-color: #f6121d;
+}
+
+.secondary-button {
+  background-color: #555;
+  color: #fff;
+}
+
+.secondary-button:hover {
+  background-color: #666;
+}
+
+.disabled-button {
+  opacity: 0.5;
+  pointer-events: none;
+}

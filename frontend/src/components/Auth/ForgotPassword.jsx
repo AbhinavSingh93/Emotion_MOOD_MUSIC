@@ -16,7 +16,7 @@ function ForgotPassword() {
     }
 
     try {
-      const url = 'http://localhost:5000/forgot-password/forgot';
+      const url = 'https://emotion-mood-music.onrender.com/forgot-password/forgot';
       const response = await fetch(url, {
         method: "POST",
         headers: { 'Content-Type': 'application/json' },

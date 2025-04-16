@@ -30,7 +30,7 @@ function Signup(){
     return handleError('name,email and password required');
   }
   try {
-    const url="http://localhost:5000/auth/signup";
+    const url="https://emotion-mood-music.onrender.com/auth/signup";
     const response =await fetch(url,{
       method:"POST",
       headers:{

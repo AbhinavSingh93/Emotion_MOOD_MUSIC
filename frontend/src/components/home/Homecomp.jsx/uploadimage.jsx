@@ -62,7 +62,7 @@ function UploadImage({ onImageSubmit, onClear, isLoading }){
     formData.append('image', selectedFile); // Must match backend key
 
     try {
-      const response = await fetch('http://localhost:5000/uploadimage/image', {
+      const response = await fetch('https://emotion-mood-music.onrender.com/uploadimage/image', {
         method: "POST",
         body: formData
       });

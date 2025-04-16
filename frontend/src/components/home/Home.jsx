@@ -52,7 +52,7 @@ function Home() {
         setIsFetchingMusic(true);
         try {
           const token = localStorage.getItem('token'); // Retrieve token from storage
-          const response = await fetch(`http://localhost:5000/fetch/music?mood=${moodData.mood}`, {
+          const response = await fetch(`https://emotion-mood-music.onrender.com/fetch/music?mood=${moodData.mood}`, {
             method: 'GET',
             headers: {
               'Authorization': token

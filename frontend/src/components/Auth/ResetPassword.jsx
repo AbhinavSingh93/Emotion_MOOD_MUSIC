@@ -15,7 +15,7 @@ function ResetPassword(){
     e.preventDefault();
 
     try {
-      const url=`https://emotion-mood-music.onrender.com/reset-password/newpass/${id}/${token}`;
+      const url=`https://mood-music-app.netlify.app//reset-password/newpass/${id}/${token}`;
       const response=await fetch(url,{
         method:"POST",
       headers:{

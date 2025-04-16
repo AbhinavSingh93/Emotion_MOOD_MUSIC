@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import './UploadImage.css';
+import './uploadimage.css';
 
 function UploadImage({ onImageSubmit, onClear, isLoading }){
   const [selectedFile, setSelectedFile] = useState(null);

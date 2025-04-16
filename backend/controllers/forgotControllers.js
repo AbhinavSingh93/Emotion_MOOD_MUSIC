@@ -31,7 +31,7 @@ const forgot=async(req,res)=>{
     from: 'abhinavsingh18813@gmail.com',
     to: email,
     subject: 'Reset Password Link',
-    text: `http://localhost:5173/reset-password/${user._id}/${jwtToken}`
+    text: `https://emotion-mood-music.onrender.com/reset-password/${user._id}/${jwtToken}`
   };
   
   transporter.sendMail(mailOptions, function(error, info){

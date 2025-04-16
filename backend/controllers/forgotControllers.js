@@ -31,7 +31,7 @@ const forgot=async(req,res)=>{
     from: 'abhinavsingh18813@gmail.com',
     to: email,
     subject: 'Reset Password Link',
-    text: `https://emotion-mood-music.onrender.com/reset-password/${user._id}/${jwtToken}`
+    text: `https://mood-music-app.netlify.app/reset-password/${user._id}/${jwtToken}`
   };
   
   transporter.sendMail(mailOptions, function(error, info){
